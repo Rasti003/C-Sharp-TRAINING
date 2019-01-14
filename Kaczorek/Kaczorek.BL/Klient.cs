@@ -3,6 +3,8 @@ namespace Kaczorek.BL
 {
     public class Klient
     {
+        public static int licznik { get; set; }
+
         private string _nazwisko;
 
         public string Nazwisko
@@ -27,7 +29,16 @@ namespace Kaczorek.BL
         {
             get
             {
-                return Imie + "," + Nazwisko;
+                string imieNazwisko = Imie;
+                if (!string.IsNullOrWhiteSpace(Nazwisko))
+                {
+                    if(!string.IsNullOrWhiteSpace(imieNazwisko))
+                    {
+                        imieNazwisko += ", ";
+                    }
+                    imieNazwisko += Nazwisko;
+                }
+                return imieNazwisko;
             }
         }
     }

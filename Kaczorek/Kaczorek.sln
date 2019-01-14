@@ -5,6 +5,10 @@ VisualStudioVersion = 15.0.28307.271
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kaczorek.BL", "Kaczorek.BL\Kaczorek.BL.csproj", "{C2AF587F-4B09-4A3F-9574-3A1A9D5C52A7}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Testy", "Testy", "{162E5633-F3A3-4A55-8316-B63595D275DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kaczorek.BLTest", "Kaczorek.BLTest\Kaczorek.BLTest.csproj", "{AB0AA372-817C-4238-A239-A335B6AD1DF9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,9 +19,16 @@ Global
 		{C2AF587F-4B09-4A3F-9574-3A1A9D5C52A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C2AF587F-4B09-4A3F-9574-3A1A9D5C52A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C2AF587F-4B09-4A3F-9574-3A1A9D5C52A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB0AA372-817C-4238-A239-A335B6AD1DF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB0AA372-817C-4238-A239-A335B6AD1DF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB0AA372-817C-4238-A239-A335B6AD1DF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB0AA372-817C-4238-A239-A335B6AD1DF9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{AB0AA372-817C-4238-A239-A335B6AD1DF9} = {162E5633-F3A3-4A55-8316-B63595D275DC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E13DC10E-9659-4582-89CE-CE1FF6D47AD5}

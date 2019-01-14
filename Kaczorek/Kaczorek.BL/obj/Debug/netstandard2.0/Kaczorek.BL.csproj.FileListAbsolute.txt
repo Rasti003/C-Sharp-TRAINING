@@ -1,0 +1,9 @@
+C:\Users\przem\Desktop\Kurs C sharp\Kaczorek\Kaczorek.BL\bin\Debug\netstandard2.0\Kaczorek.BL.deps.json
+C:\Users\przem\Desktop\Kurs C sharp\Kaczorek\Kaczorek.BL\bin\Debug\netstandard2.0\Kaczorek.BL.dll
+C:\Users\przem\Desktop\Kurs C sharp\Kaczorek\Kaczorek.BL\bin\Debug\netstandard2.0\Kaczorek.BL.pdb
+C:\Users\przem\Desktop\Kurs C sharp\Kaczorek\Kaczorek.BL\obj\Debug\netstandard2.0\Kaczorek.BL.csprojAssemblyReference.cache
+C:\Users\przem\Desktop\Kurs C sharp\Kaczorek\Kaczorek.BL\obj\Debug\netstandard2.0\Kaczorek.BL.csproj.CoreCompileInputs.cache
+C:\Users\przem\Desktop\Kurs C sharp\Kaczorek\Kaczorek.BL\obj\Debug\netstandard2.0\Kaczorek.BL.AssemblyInfoInputs.cache
+C:\Users\przem\Desktop\Kurs C sharp\Kaczorek\Kaczorek.BL\obj\Debug\netstandard2.0\Kaczorek.BL.AssemblyInfo.cs
+C:\Users\przem\Desktop\Kurs C sharp\Kaczorek\Kaczorek.BL\obj\Debug\netstandard2.0\Kaczorek.BL.dll
+C:\Users\przem\Desktop\Kurs C sharp\Kaczorek\Kaczorek.BL\obj\Debug\netstandard2.0\Kaczorek.BL.pdb
