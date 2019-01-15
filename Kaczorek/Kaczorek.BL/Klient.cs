@@ -1,8 +1,21 @@
 ﻿
+using System.Collections.Generic;
+
 namespace Kaczorek.BL
 {
     public class Klient
     {
+
+        public Klient(int klientId)
+        {
+            this.KlientId = klientId;
+        }
+
+        public Klient()
+        {
+
+        }
+
         public static int licznik { get; set; }
 
         private string _nazwisko;
@@ -21,7 +34,7 @@ namespace Kaczorek.BL
         }
         public string Imie { get; set; }
 
-        public string email { get; set; }
+        public string Email { get; set; }
 
         public int KlientId { get; private set; }
 
@@ -32,7 +45,7 @@ namespace Kaczorek.BL
                 string imieNazwisko = Imie;
                 if (!string.IsNullOrWhiteSpace(Nazwisko))
                 {
-                    if(!string.IsNullOrWhiteSpace(imieNazwisko))
+                    if (!string.IsNullOrWhiteSpace(imieNazwisko))
                     {
                         imieNazwisko += ", ";
                     }
@@ -40,6 +53,35 @@ namespace Kaczorek.BL
                 }
                 return imieNazwisko;
             }
+        }
+
+        public bool Zwaliduj()
+        {
+            var poprawne = true;
+
+            if (string.IsNullOrWhiteSpace(Nazwisko))
+                poprawne = false;
+            if (string.IsNullOrWhiteSpace(Email))
+                poprawne = false;
+
+
+            return poprawne;
+
+        }
+
+        public bool Zapisz()
+        {
+        
+        return true;
+        }
+
+        public Klient Pobierz (int klientId)
+        {
+            return new Klient();
+        }
+        public List<Klient> Pobierz()
+        {
+            return new List<Klient>();
         }
     }
 }
