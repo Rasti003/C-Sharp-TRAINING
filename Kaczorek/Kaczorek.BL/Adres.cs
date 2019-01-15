@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Kaczorek.BLTest
+namespace Kaczorek.BL
 {
    public class Adres
     {
@@ -17,6 +17,7 @@ namespace Kaczorek.BLTest
         {
             this.AdresId = adresId;
         }
+
         public int AdresId { get;private set; }
         public int AdresTyp { get; set; }
         public string Ulica { get; set; }
