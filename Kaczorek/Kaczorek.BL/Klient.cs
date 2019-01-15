@@ -5,17 +5,17 @@ namespace Kaczorek.BL
 {
     public class Klient
     {
+        public Klient()
+        {
+
+        }
 
         public Klient(int klientId)
         {
             this.KlientId = klientId;
         }
 
-        public Klient()
-        {
-
-        }
-
+      
         public static int licznik { get; set; }
 
         private string _nazwisko;
@@ -32,6 +32,7 @@ namespace Kaczorek.BL
             }
 
         }
+
         public string Imie { get; set; }
 
         public string Email { get; set; }
