@@ -42,9 +42,9 @@ namespace Kaczorek.BL
             return true;
         }
 
-        public Klient Pobierz(int produktId)
+        public Produkt Pobierz(int produktId)
         {
-            return new Klient();
+            return new Produkt();
         }
 
 

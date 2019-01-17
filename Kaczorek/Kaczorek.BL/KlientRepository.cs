@@ -8,11 +8,7 @@ namespace Kaczorek.BL
 {
     public class KlientRepository
     {
-        public bool Zapisz()
-        {
-
-            return true;
-        }
+        
 
         public Klient Pobierz(int klientId)
         {
@@ -33,6 +29,13 @@ namespace Kaczorek.BL
         {
             return new List<Klient>();
         }
+
+        public bool Zapisz()
+        {
+
+            return true;
+        }
+
     }
 
 }
