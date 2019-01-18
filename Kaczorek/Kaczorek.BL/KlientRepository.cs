@@ -8,11 +8,18 @@ namespace Kaczorek.BL
 {
     public class KlientRepository
     {
-        
+        private AdresRepository adresRepository { get; set; }
+        public KlientRepository()
+        {
+            adresRepository = new AdresRepository();
+        }
 
         public Klient Pobierz(int klientId)
         {
+
             Klient klient = new Klient(klientId);
+            klient.ListaAdresow = adresRepository.PobierzPoKlientId(klientId).ToList();
+            
 
             if (klientId ==1)
             {
@@ -22,8 +29,8 @@ namespace Kaczorek.BL
                 
             }
             return klient;
+        
         }
-
 
         public List<Klient> Pobierz()
         {
