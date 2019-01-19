@@ -4,7 +4,8 @@ using System.Text;
 
 namespace Kaczorek.BL
 {
-    public class Zamowienie
+    #region konstruktory
+    public class Zamowienie : KlasaBazowa
     {
         public Zamowienie()
         {
@@ -15,10 +16,19 @@ namespace Kaczorek.BL
         {
             this.ZamowienieId = zamowienieId;
         }
+
+        #endregion
+
+        #region wlasciowsci
         public int ZamowienieId { get; private set; }
         public DateTimeOffset? DataZamowienia { get; set; }
+        public List<PozycjaZamowienia> pozycjaZamowienias { get; set; }
+        public int KlientId { get; set; }
+        public int AdresDostawyId { get; set; }
+        #endregion
 
-        public bool Zwaliduj()
+        #region Metody
+        public override bool Zwaliduj()
         {
             var poprawne = true;
 
@@ -47,7 +57,12 @@ namespace Kaczorek.BL
         {
             return new List<Zamowienie>();
         }
+        #endregion
 
+        public override string ToString()
+        {
+            return DataZamowienia.Value.Date + " ("  + ZamowienieId + ")";
+        }
 
     }
 }

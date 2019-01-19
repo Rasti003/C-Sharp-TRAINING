@@ -37,10 +37,23 @@ namespace Kaczorek.BL
             return new List<Klient>();
         }
 
-        public bool Zapisz()
+        public bool Zapisz(Klient klient)
         {
 
-            return true;
+            var sukces = true;
+            if (klient.MaZmiany && klient.DanePrawidlowe)
+            {
+                if (klient.JestNowy)
+                {
+                    //procedura insert
+                }
+                else
+                {
+                    //procedura update
+                }
+            }
+
+            return sukces;
         }
 
     }

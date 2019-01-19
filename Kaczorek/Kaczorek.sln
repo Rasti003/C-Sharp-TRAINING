@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.271
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kaczorek.BL", "Kaczorek.BL\Kaczorek.BL.csproj", "{C2AF587F-4B09-4A3F-9574-3A1A9D5C52A7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kaczorek.BL", "Kaczorek.BL\Kaczorek.BL.csproj", "{C2AF587F-4B09-4A3F-9574-3A1A9D5C52A7}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Testy", "Testy", "{162E5633-F3A3-4A55-8316-B63595D275DC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kaczorek.BLTest", "Kaczorek.BLTest\Kaczorek.BLTest.csproj", "{AB0AA372-817C-4238-A239-A335B6AD1DF9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{DE1841E4-E017-4510-A535-B28D12A2FBD5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,6 +25,10 @@ Global
 		{AB0AA372-817C-4238-A239-A335B6AD1DF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AB0AA372-817C-4238-A239-A335B6AD1DF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AB0AA372-817C-4238-A239-A335B6AD1DF9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE1841E4-E017-4510-A535-B28D12A2FBD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE1841E4-E017-4510-A535-B28D12A2FBD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE1841E4-E017-4510-A535-B28D12A2FBD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE1841E4-E017-4510-A535-B28D12A2FBD5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

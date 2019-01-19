@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Kaczorek.BL
 {
-    public class Klient
+    public class Klient : KlasaBazowa
     {
         #region konstruktory
         public Klient(): this(0) 
@@ -60,10 +60,12 @@ namespace Kaczorek.BL
         }
 
         public List<Adres> ListaAdresow  { get; set; }
+
+        public int TypKlienta { get; set; }
         #endregion
 
         #region metody
-        public bool Zwaliduj()
+        public override bool Zwaliduj()
         {
             var poprawne = true;
 
@@ -90,6 +92,12 @@ namespace Kaczorek.BL
         public List<Klient> Pobierz()
         {
             return new List<Klient>();
+        }
+
+
+        public override string ToString()
+        {
+            return ImieNazwisko;
         }
         #endregion
     }

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Kaczorek.BL
 {
-    public class Produkt
+    public class Produkt : KlasaBazowa 
     {
         public Produkt()
         {
@@ -18,10 +18,17 @@ namespace Kaczorek.BL
         public int ProduktId { get; private set; }
         public Decimal? AktalnaCena { get; set; }
         public string Opis { get; set; }
-        public string NazwaProduktu { get; set; }
+        private string _NazwaProduktu;
+
+        public string NazwaProduktu
+        {
+            get { return _NazwaProduktu; }
+            set { _NazwaProduktu = value; }
+        }
 
 
-        public bool Zwaliduj()
+
+        public override bool Zwaliduj()
         {
             var poprawne = true;
 
@@ -52,6 +59,11 @@ namespace Kaczorek.BL
         {
             return new List<Produkt>();
         }
+        public override string ToString()
+        {
+            return NazwaProduktu;
+        }
 
+   
     }
 }

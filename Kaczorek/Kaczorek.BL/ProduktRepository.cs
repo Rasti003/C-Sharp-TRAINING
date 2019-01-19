@@ -28,10 +28,22 @@ namespace Kaczorek.BL
             return new List<Produkt>();
         }
 
-        public bool Zapisz()
+        public bool Zapisz( Produkt produkt)
         {
+            var sukces = true;
+            if (produkt.MaZmiany && produkt.DanePrawidlowe)
+            {
+                if (produkt.JestNowy)
+                {
+                    //procedura insert
+                }
+                else
+                {
+                    //procedura update
+                }
+            }
 
-            return true;
+            return sukces;
         }
     }
 }
